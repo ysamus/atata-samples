@@ -17,7 +17,6 @@ namespace AtataSamples.FileDownloadVerification
 
 			AtataContext.Configure().
 				UseChrome().
-					//WithArguments("start-maximized").
 					//WithArguments("headless").
 					WithOptions(options => options.AddUserProfilePreference("download.default_directory", DownloadDirectoryPath)).
 					WithLocalDriverPath().
